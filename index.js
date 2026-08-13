@@ -34,7 +34,7 @@ app.command("/rpg-catfact", async ({ ack, respond }) => {
   }
 });
 
-app.command("/slackrpg-help", async ({ ack, respond }) => {
+app.command("/rpg-help", async ({ ack, respond }) => {
   await ack();
   await respond({
     text:
@@ -43,7 +43,6 @@ app.command("/slackrpg-help", async ({ ack, respond }) => {
 /rpg-catfact - Get a cat fact`
   });
 });
-print("ig we should just type code every now and then")
 app.command("/rpg-search", async ({ ack, respond}) => {
   await ack()
   await respond({
