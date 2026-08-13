@@ -43,11 +43,12 @@ app.command("/rpg-help", async ({ ack, respond }) => {
 /rpg-catfact - Get a cat fact`
   });
 });
-app.command("/rpg-search", async ({ ack, respond}) => {
+
+app.command("/rpg-explore", async ({ ack, respond}) => {
   await ack()
   await respond({
     text:
 'You found a wild bore!'
-
   });
 });
+
